@@ -1,0 +1,1905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: #f5f5f5;
+        }
+
+        /* Navigation */
+        nav {
+           
+            height: 123px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background: white;
+            font-family: Poppins;
+            font-weight: 500;
+            font-style: SemiBold;
+            font-size: 14px;
+            line-height: 14px;
+            letter-spacing: 0%;
+        }
+        
+        nav > div {
+           
+            height: 65px;
+            width: 1200px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        nav>div>img{
+            width: 113.30416107177734px;
+           height: 50px;
+           opacity: 1;
+           margin-left: -80px;
+           margin-top: 13px;
+
+gap: 9.11px;
+
+        }
+        nav > div > .nav_a {
+            text-decoration: none;
+            display: flex;
+            gap: 0;
+            color: #333;
+            font-weight: 500;
+            font-size: 16px;
+            padding-top: 26px;
+        }
+        nav>div>.nav_a>span{
+            color:rgba(102, 101, 254, 1);
+;
+        }
+
+        nav > div > button {
+            height: 56px;
+            width: 143.88px;
+            border: 1px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        #Login {
+            margin-right: -87px;
+            margin-top: -10px;
+            background-color: #6665FE;
+            color: white;
+        }
+
+        #contact {
+            margin-top: -10px;
+            margin-right: -70px;
+            color: #6665FE;
+            background-color: #fff;
+            border: 1px solid blue;
+        }
+
+        /* Section 1 */
+        #section1 {
+           
+            width: 100%;
+            height: 386px;
+            position: relative;
+        }
+
+        #section1 > img {
+            height: 386px;
+            width: 100%;
+            opacity: 30%;
+            background-size: cover;
+            backdrop-filter: blur(14px);
+            object-position: center;
+            overflow: hidden;
+        }
+
+        #section1 > section > #container1 {
+            width: 452px;
+            height: 204px;
+            margin-top: -300px;
+            margin-left: 160px;
+            opacity: 1;
+        }
+
+        #section1 > section > #container1 > h6 {
+            color: blue;
+            font-family: Open Sans;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 100%;
+        }
+
+        #section1 > section > #container1 > h1 {
+            font-family: Open Sans;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 44px;
+            color: black;
+        }
+
+        #section1 > section > #container1 > p {
+            font-family: Open Sans;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 100%;
+        }
+
+        /* Metrics Container */
+        .container {
+            position: absolute;
+            margin-left: 27px;
+            top: 364.8px;
+            left: 120px;
+            margin-top: -120px;
+        }
+
+        .metrics-container {
+            width: 342px;
+            height: 34.2px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            opacity: 1;
+            border-radius: 6px;
+            padding: 12px 15px;
+            box-sizing: content-box;
+            /* background: white; */
+        }
+
+        .metric-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .icon-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #5B7FFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .icon-circle img {
+            width: 24px;
+            height: 24px;
+            filter: brightness(0) invert(1);
+        }
+
+        .metric-content {
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+        }
+
+        .metric-value {
+            font-size: 16px;
+            font-weight: 700;
+            color: #000000;
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        .metric-label {
+            font-size: 11px;
+            font-weight: 400;
+            color: #666666;
+            line-height: 1.2;
+            margin: 0;
+            margin-top: 2px;
+        }
+
+        .dotted-line {
+            width: 50px;
+            height: 1px;
+            background-image: repeating-linear-gradient(
+                to right,
+                #CCCCCC 0px,
+                #CCCCCC 3px,
+                transparent 3px,
+                transparent 6px
+            );
+            align-self: center;
+        }
+
+        /* 2nd container */
+        .main-container-images {
+            position: relative;
+            width: 400px;
+            height: 362px;
+            margin-left: 970px;
+            margin-top: -280px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .image-top {
+            position: absolute;
+            width: 230px;
+            height: 175px;
+            top: 12px;
+            right: 12px;
+            border-radius: 9px;
+            overflow: hidden;
+            z-index: 2;
+        }
+
+        .image-top img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .image-bottom {
+            position: absolute;
+            width: 230px;
+            height: 175px;
+            bottom: 50px;
+            left: 12px;
+            border-radius: 9px;
+            overflow: hidden;
+            z-index: 2;
+        }
+
+        .image-bottom img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Section 2 - Input Section */
+        #section2 {
+            width: 946px;
+            height: 66px;
+            margin-left: 50%;
+            background-color: #ffd6d6;
+            box-shadow: 4px 3px 11px 0px rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 3px;
+            transform: translate(-50%, -50%);
+            margin-top: 50px;
+            margin-top: -15px;
+        }
+
+        #section2 > input {
+            width: 238px;
+            height: 36px;
+            opacity: 1;
+            border-radius: 6px;
+            font-family: Open Sans;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 16px;
+            color: rgb(27, 14, 14);
+            border: 2px solid whitesmoke;
+            padding: 0 10px;
+            
+        }
+
+        #section2 > button {
+            width: 124px;
+            height: 36px;
+            opacity: 1;
+            border-radius: 4px;
+            background: rgba(102, 101, 254, 1);
+            color: whitesmoke;
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Leaderboard Section */
+        .leaderboard-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 20px;
+            background: #f5f5f5;
+            margin-top: -85px;
+        }
+
+        .main-container {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header-section h1 {
+            font-size: 42px;
+            font-weight: 600;
+            color: #2d2d2d;
+            margin-bottom: 10px;
+        }
+
+        .header-section h1 .board {
+            color: #5b6cf5;
+        }
+
+        .subtitle {
+            font-size: 17px;
+            color: #7a7a7a;
+            font-weight: 400;
+        }
+
+        .leaderboard-container {
+            background: white;
+            border-radius: 8px;
+            width: 669.81px;
+            position: relative;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        }
+
+        .live-section {
+            padding: 12px 20px;
+        }
+
+        .live-badge {
+            display: inline-flex;
+            align-items: center;
+            background: #ffe5e5;
+            color: #dc2626;
+            padding: 3px 10px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .live-dot {
+            width: 7px;
+            height: 7px;
+            background: #dc2626;
+            border-radius: 50%;
+            margin-right: 6px;
+        }
+
+        .table-header {
+            display: flex;
+            background: #fafafa;
+            padding: 14px 20px;
+            font-weight: 600;
+            color: #333;
+            font-size: 13px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .col-ranking {
+            width: 80px;
+        }
+
+        .col-members {
+            width: 240px;
+        }
+
+        .col-earning {
+            flex: 1;
+        }
+
+        .col-working {
+            width: 100px;
+        }
+
+        .leaderboard-row {
+            display: flex;
+            align-items: center;
+            padding: 16px 20px;
+            background: white;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .leaderboard-row:last-child {
+            border-bottom: none;
+        }
+
+        .rank {
+            width: 80px;
+            font-weight: 400;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .member-info {
+            width: 240px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .member-name {
+            font-weight: 500;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .earning {
+            flex: 1;
+            font-weight: 600;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .currency {
+            font-size: 11px;
+            color: #999;
+            font-weight: 400;
+            margin-left: 4px;
+        }
+
+        .working {
+            width: 100px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        @media (max-width: 700px) {
+            .leaderboard-container {
+                width: 100%;
+            }
+
+            .col-working,
+            .working {
+                display: none;
+            }
+
+            .header-section h1 {
+                font-size: 32px;
+            }
+
+            .subtitle {
+                font-size: 15px;
+            }
+        }
+       #top-bar {
+            
+            height: 6px;
+            width: 100%;
+        }
+
+        .hero-section {
+            background-color: #e5e7eb;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .content-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .main-heading {
+            font-size: 42px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        .blue-text {
+            color: #6366f1;
+        }
+
+        .sub-text {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+.section4>img{
+    width: 919px;
+    height: 290 px;
+    margin-left: 360px;
+    margin-top: -160px;
+    opacity: 1;
+    top: 1548px;
+}
+
+.h1aftersection3>h1{
+    margin-top: 5px;
+    margin-left: 43%;
+}
+.h1aftersection3>h1>span{
+    color: rgba(102, 101, 254, 1);
+}
+
+.section4{
+    color: rgba(94, 102, 112, 1);
+
+}
+.section4>#one{
+    margin-top: -340px;
+    margin-left: 440px;
+}
+
+.section4>#two{
+margin-top: -43px;
+margin-left: 720px;
+}
+.section4>#three{
+    margin-top: -45px;
+    margin-left: 1011px;
+}
+
+.section4>h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    gap: 13px;
+    color:#000000;
+}
+.section4>h1>span{
+      color: rgba(102, 101, 254, 1);
+}
+
+.section4>p{
+    font-family: Poppins;
+font-weight: 400px;
+font-style: Regular;
+font-size: 22px;
+line-height: 22px;
+letter-spacing: 0%;
+text-align: center;
+margin-top: 10px;
+}
+
+ .jobs-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 24px;
+            margin-top: 66px;
+          
+            
+        }
+
+        .job-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 16px;
+            padding: 28px;
+            flex: 1;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        }
+
+        .job-header {
+            margin-bottom: 24px;
+        }
+
+        .job-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .job-meta {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+        }
+
+        .job-type {
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .green-badge {
+            color: #10b981;
+        }
+
+        .purple-badge {
+            color: #8b5cf6;
+        }
+
+        .salary-info {
+            color: #6b7280;
+        }
+
+        .company-block {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 20px;
+        }
+
+        .logo-circle {
+            width: 52px;
+            height: 52px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .logo-circle svg,
+        .logo-circle img {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+        }
+
+        .company-details {
+            flex: 1;
+        }
+
+        .company-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 4px;
+        }
+
+        .location-text {
+            font-size: 13px;
+            color: #6b7280;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .applicants-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .avatars-group {
+            display: flex;
+            margin-right: 10px;
+        }
+
+        .user-avatar {
+            /* Now applied to a container DIV for the IMG */
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 3px solid #f8f9fa;
+            margin-left: -10px;
+            overflow: hidden; /* Ensures image is clipped to circle */
+            flex-shrink: 0;
+        }
+
+        .user-avatar:first-child {
+            margin-left: 0;
+        }
+
+        /* NEW STYLE FOR IMAGE INSIDE AVATAR */
+        .user-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures image fills the circle without distortion */
+            border-radius: 50%;
+        }
+
+        /* --- Removed the old background styles for avatar-1, -2, -3 --- */
+
+        .count-text {
+            font-size: 13px;
+            color: #1a1a1a;
+            font-weight: 500;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 12px;
+        }
+
+        .button {
+            flex: 1;
+            padding: 13px 20px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s ease;
+        }
+
+        .outline-btn {
+            background-color: #fff;
+            color: #374151;
+            border: 2px solid #e5e7eb;
+        }
+        .outline-btn:hover {
+            background-color: #f9fafb;
+            border-color: #d1d5db;
+        }
+        .primary-btn {
+            background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+            color: #fff;
+            box-shadow: 0 2px 6px rgba(99, 102, 241, 0.3);
+        }
+        .primary-btn:hover {
+            background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+        }
+        .section5>h1{
+            display: flex;
+            justify-content: center;
+
+            align-items: center;
+            margin-top: 25px;
+        }
+        .section6{
+            width: 1200px;
+            height: 388px;
+            margin-left: 170px;
+            margin-top: 25px;
+            opacity: 1;
+             top: 2401px;
+             left: 120px;
+             border-radius: 20px;
+             background: rgba(0, 0, 0, 1);
+             font-family: Open Sans;   
+             letter-spacing: 0%;
+        }
+        .section6>#cont1>h1>span{
+            color: rgba(102, 101, 254, 1);    
+        }
+        .section6>#cont1{
+            padding-left: 90px;
+            padding-top: 50px;
+        }
+         .section6>#cont1>h1{
+            color: whitesmoke;
+            font-family: Open Sans;
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 40px;
+            letter-spacing: 0%;
+         }
+          .section6>#cont1>p{
+            font-family: Open Sans;
+           font-weight: 400;
+           font-style: Regular;
+           font-size: 13px;
+           line-height: 2px;
+           letter-spacing: 0%;
+           color: rgba(255, 255, 255, 0.8);
+           padding-top: 20px;
+          }
+
+.section6>#cont1>button{
+    width: 137.42999267578125px;
+height: 38.85920715332031px;
+opacity: 1;
+top: 316px;
+left: 65px;
+margin-top: 50px;
+background: rgba(102, 101, 254, 1);
+color: whitesmoke;
+border-radius: 2px;
+}
+
+.section6>#cont2>img{
+    width: 590px;
+    height: 410px;
+    opacity: 1;
+    top: 2399px;
+    left: 759px;
+    margin-left: 630px;
+    margin-top: -346px;
+
+}
+
+.section7{
+    font-family: Poppins;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 23px;
+   line-height: 45px;
+   letter-spacing: 0%;
+   text-align: center;
+   margin-top: 25px;
+}
+.section7>h1>span{
+    color: rgba(102, 101, 254, 1);
+
+}
+
+.section8{
+
+    width: 100%;
+height: 562.20947265625px;
+margin-top: 5px;
+left: -9px;
+opacity: 1;
+border-radius: 10px;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+
+}
+.section8>.samecard{
+
+    width: 240.69403076171875px;
+height: 433px;
+top: 2918.21px;
+left: -9px;
+opacity: 1;
+border-radius: 10px;
+background-image: url('./freelancebgimg.png');
+
+}
+.section8>#middle{
+    height:500px ;
+   background-image: url('./freelanceboyimg.png');
+}
+
+        .card {
+            /* background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%); */
+            border-radius: 20px;
+            padding: 100px 2px;
+            text-align: center;
+            max-width: 400px;margin-top: 40px;
+          
+        }
+
+        .play-button {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #4db8a8 0%, #3a9d8f 100%);
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 30px;
+        }
+
+       
+
+        .play-icon {
+            width: 0;
+            height: 0;
+            border-left: 25px solid white;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            margin-left: 5px;
+        }
+
+        .text {
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.4;
+            letter-spacing: 0.5px;
+        }
+                .section9 {
+            max-width: 1440px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .hiring-title-wrapper {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .hiring-title-wrapper h2 {
+            font-size: 36px;
+            font-weight: 400;
+            color: #333;
+        }
+
+        .hiring-title-wrapper .highlight-text {
+            color: #4285f4;
+            font-weight: 500;
+        }
+
+        .companies-carousel {
+            position: relative;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        .brand-row {
+            display: flex;
+            gap: 100px;
+            margin-bottom: 50px;
+            white-space: nowrap;
+        }
+
+        .brand-row:first-child {
+            animation: slide-left 40s linear infinite;
+        }
+
+        .brand-row:last-child {
+            animation: slide-right 40s linear infinite;
+            margin-bottom: 0;
+        }
+
+        .company-logo-box {
+            flex-shrink: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 180px;
+            height: 80px;
+            transition: transform 0.3s ease;
+        }
+
+        .company-logo-box:hover {
+            transform: scale(1.1);
+        }
+
+        /* Google Logo */
+        .google-brand {
+            font-size: 48px;
+            font-weight: 700;
+            font-family: 'Arial', sans-serif;
+            letter-spacing: -2px;
+        }
+
+        .google-brand .letter-g { color: #4285F4; }
+        .google-brand .letter-o1 { color: #EA4335; }
+        .google-brand .letter-o2 { color: #FBBC04; }
+        .google-brand .letter-g2 { color: #4285F4; }
+        .google-brand .letter-l { color: #34A853; }
+        .google-brand .letter-e { color: #EA4335; }
+
+        /* Microsoft Logo */
+        .microsoft-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .ms-icon-grid {
+            display: grid;
+            grid-template-columns: 22px 22px;
+            grid-template-rows: 22px 22px;
+            gap: 3px;
+        }
+
+        .ms-box-red { background: #F25022; }
+        .ms-box-green { background: #7FBA00; }
+        .ms-box-blue { background: #00A4EF; }
+        .ms-box-yellow { background: #FFB900; }
+
+        .ms-brand-name {
+            font-size: 24px;
+            color: #5E5E5E;
+            font-weight: 600;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        /* Flipkart Logo */
+        .flipkart-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .flipkart-name {
+            font-size: 28px;
+            font-weight: 700;
+            font-style: italic;
+            color: #047BD5;
+            font-family: Arial, sans-serif;
+        }
+
+        .flipkart-bag-icon {
+            width: 40px;
+            height: 35px;
+            background: linear-gradient(135deg, #FFD700 0%, #FFC700 100%);
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .flipkart-bag-icon::after {
+            content: '';
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            background: #047BD5;
+            transform: rotate(45deg);
+            top: 8px;
+            left: 11px;
+        }
+
+        /* YouTube Logo */
+        .youtube-brand {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .yt-play-button {
+            width: 45px;
+            height: 32px;
+            background: #FF0000;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .yt-play-button::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 12px solid white;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            top: 9px;
+            left: 16px;
+        }
+
+        .yt-brand-name {
+            font-size: 26px;
+            font-weight: 700;
+            color: #282828;
+            font-family: Arial, sans-serif;
+        }
+
+        /* IBM Logo */
+        .ibm-brand {
+            font-size: 48px;
+            font-weight: 700;
+            color: #0530AD;
+            font-family: 'Courier New', monospace;
+            letter-spacing: 8px;
+            position: relative;
+        }
+
+        .ibm-brand::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 50%;
+            top: 25%;
+            left: 0;
+            background: repeating-linear-gradient(
+                to bottom,
+                transparent 0px,
+                transparent 6px,
+                #f8f9fa 6px,
+                #f8f9fa 10px
+            );
+        }
+
+        @keyframes slide-left {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        @keyframes slide-right {
+            0% {
+                transform: translateX(-50%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .brand-row:hover {
+            animation-play-state: paused;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 60px;
+            gap: 60px;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin-left: 80px;
+            margin-top: 20px;
+            background: linear-gradient(101.41deg, rgba(197, 153, 229, 0.36) -33.13%, rgba(197, 153, 229, 0) 48.49%, rgba(226, 204, 242, 0.48) 125.81%);
+
+        }
+
+        .logo-section {
+            flex: 1.2;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: #333;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .contact-info {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .phone {
+            font-weight: 600;
+            color: #5b4fc7;
+            margin-bottom: 15px;
+        }
+
+        .address {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .footer-section h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #5b7fc7;
+            margin-bottom: 20px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-section ul li a {
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: #5b4fc7;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .copyright {
+            color: #8b7fc7;
+            font-size: 14px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-links a {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #7b6fc7;
+            transition: all 0.3s ease;
+            font-size: 20px;
+        }
+
+        .social-links a:hover {
+            color: #5b4fc7;
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 768px) {
+            .footer {
+                padding: 40px 20px 30px;
+
+
+               
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+     <!-- Nav Tag -->
+    <nav>
+        <div>
+            <img src="./snaplogo.png" alt="">
+            <a href="./project.html" class="nav_a"> <span>Home</span></a>
+            <a href="" class="nav_a">About</a>
+            <a href="" class="nav_a">Contact Us</a>
+            <a href="" class="nav_a">Career</a>
+            <a href="" class="nav_a">Jobs</a>
+            <button id="contact">Contact Us</button>
+            <button id="Login">Login</button>
+        </div>
+    </nav>
+
+    <!-- section1 part -->
+    <section id="section1">
+        <img src="./bgimgsec1.jpg" alt="">
+        <section>
+            <div id="container1">
+                <h6>Freelance Recruitment Earnings</h6>
+                <h1>Boost Your Freelance</h1>
+                <h1>Recruitment Career!</h1>
+                <p>Earn jaw-dropping rewards by referring candidates for jobs-unlock</p>
+                <p>potential earnings of ₹10 Lakhs+ per month and beyond!</p>
+            </div>
+
+            <div class="container">
+                <div class="metrics-container">
+                    <div class="metric-item">
+                        <div class="icon-circle">
+                            <img src="./bag.png" alt="Jobs">
+                        </div>
+                        <div class="metric-content">
+                            <div class="metric-value">25,850</div>
+                            <div class="metric-label">Jobs</div>
+                        </div>
+                    </div>
+
+                    <div class="dotted-line"></div>
+
+                    <div class="metric-item">
+                        <div class="icon-circle">
+                            <img src="./person.png" alt="Candidates">
+                        </div>
+                        <div class="metric-content">
+                            <div class="metric-value">10,250</div>
+                            <div class="metric-label">Candidates</div>
+                        </div>
+                    </div>
+
+                    <div class="dotted-line"></div>
+
+                    <div class="metric-item">
+                        <div class="icon-circle">
+                            <img src="./buildings.png" alt="Companies">
+                        </div>
+                        <div class="metric-content">
+                            <div class="metric-value">18,400</div>
+                            <div class="metric-label">Companies</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-container-images">
+                <div class="image-top">
+                    <img src="./sectwoimg.jpg" alt="Professional team meeting with laptops">
+                </div>
+
+                <div class="image-bottom">
+                    <img src="./seconeimg.jpg" alt="Team collaboration at table">
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Input part -->
+    <section id="section2">
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Email">
+        <input type="text" placeholder="Mobile Number">
+        <button id="signup">Sign Up</button>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section class="leaderboard-wrapper">
+        <div class="main-container">
+            <div class="header-section">
+                <h1>Leader<span class="board">board</span></h1>
+                <p class="subtitle">Meet Our Highest Earning Referrers</p>
+            </div>
+
+            <div class="leaderboard-container">
+                <div class="live-section">
+                    <div class="live-badge">
+                        <span class="live-dot"></span>
+                        Live
+                    </div>
+                </div>
+
+                <div class="table-header">
+                    <div class="col-ranking">Ranking</div>
+                    <div class="col-members">Members</div>
+                    <div class="col-earning">Total Earning</div>
+                    <div class="col-working">Working<br>with us</div>
+                </div>
+
+                <div class="leaderboard-row">
+                    <div class="rank">1</div>
+                    <div class="member-info">
+                        <img src="./girl311.jpg" alt="Gurmehak Kaur S." class="avatar">
+                        <div class="member-name">Gurmehak Kaur S.</div>
+                    </div>
+                    <div class="earning">
+                        ₹3,382,174 <span class="currency">INR</span>
+                    </div>
+                    <div class="working"></div>
+                </div>
+
+                <div class="leaderboard-row">
+                    <div class="rank">2</div>
+                    <div class="member-info">
+                        <img src="./boy311.jpg" alt="Saif S." class="avatar">
+                        <div class="member-name">Saif S.</div>
+                    </div>
+                    <div class="earning">
+                        ₹3,111,142 <span class="currency">INR</span>
+                    </div>
+                    <div class="working"></div>
+                </div>
+
+                <div class="leaderboard-row">
+                    <div class="rank">3</div>
+                    <div class="member-info">
+                        <img src="./boy311.jpg" alt="Saif S." class="avatar">
+                        <div class="member-name">Saif S.</div>
+                    </div>
+                    <div class="earning">
+                        ₹3,111,142 <span class="currency">INR</span>
+                    </div>
+                    <div class="working"></div>
+                </div>
+
+                <div class="leaderboard-row">
+                    <div class="rank">4</div>
+                    <div class="member-info">
+                        <img src="./boy311.jpg" alt="Saif S." class="avatar">
+                        <div class="member-name">Saif S.</div>
+                    </div>
+                    <div class="earning">
+                        ₹3,111,142 <span class="currency">INR</span>
+                    </div>
+                    <div class="working"></div>
+                </div>
+
+                <div class="leaderboard-row">
+                    <div class="rank">5</div>
+                    <div class="member-info">
+                        <img src="./boy311.jpg" alt="Saif S." class="avatar">
+                        <div class="member-name">Saif S.</div>
+                    </div>
+                    <div class="earning">
+                        ₹3,111,142 <span class="currency">INR</span>
+                    </div>
+                    <div class="working"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <div id="top-bar"></div>
+
+    <section class="hero-section">
+        <div class="content-wrapper">
+            <h1 class="main-heading">
+                Connect with Thousands of
+                <br> Professional
+                 <span class="blue-text">Freelancers</span>
+            </h1>
+            <p class="sub-text">
+                At SnapFind, we bring together thousands of freelancers, offering them the chance to earn money by referring candidates. It's a simple process: use your network, find great candidates, and get rewarded. Join us today and start earning with SnapFind!
+            </p>
+        </div>
+    </section>
+     
+
+    <section class="h1aftersection3">
+        <h1>Just 3 Easy <span>Steps</span> </h1>
+    </section>
+
+
+    <!-- o1o2o3 -->
+    <section class="section4">
+        <img src="./010203.png" alt="">
+
+        <aside id="one">
+            <h4>Sign-up</h4>
+            <p>Easy Signup and Login</p>
+        </aside>
+        <aside id="two">
+            <h4>Refer Candidates</h4>
+            <p>Refer candidates for jobs</p>
+        </aside>
+        <aside id="three">
+            <h4>Earn on Referrals</h4>
+            <p>Get Earning on your</p>
+            <p>hired candidates</p>
+        </aside>
+
+        <h1>Featured   <span>jobs</span></h1>
+        <p>Choose jobs from the top employers and apply for the same.
+        </p>
+    </section>
+
+    <!-- Cards -->
+  <div class="jobs-wrapper">
+        <div class="job-card">
+            <div class="job-header">
+                <h3 class="job-title">Technical Support Specialist</h3>
+                <div class="job-meta">
+                    <span class="job-type green-badge">PART-TIME</span>
+                    <span class="salary-info">Salary: 20,000 INR - 25,000 INR</span>
+                </div>
+            </div>
+            
+            <div class="company-block">
+                <div class="logo-circle">
+                    <svg viewBox="0 0 24 24" width="32" height="32">
+                        <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                        <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                        <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                        <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                    </svg>
+                </div>
+                <div class="company-details">
+                    <div class="company-title">Google Inc.</div>
+                    <div class="location-text">📍 New Delhi, India</div>
+                </div>
+            </div>
+            
+            <div class="applicants-row">
+                <div class="avatars-group">
+                    <div class="user-avatar"><img src="./girltwo.png" alt="Applicant 1"></div>
+                    <div class="user-avatar"><img src="./boytwo.png" alt="Applicant 2"></div>
+                    <div class="user-avatar"><img src="./boythree.png" alt="Applicant 3"></div>
+                </div>
+                <span class="count-text">10+ applicants</span>
+            </div>
+            
+            <div class="action-buttons">
+                <button class="button outline-btn">View details</button>
+                <button class="button primary-btn">Apply now</button>
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-header">
+                <h3 class="job-title">Senior UI/UX Designer</h3>
+                <div class="job-meta">
+                    <span class="job-type purple-badge">FULL-TIME</span>
+                    <span class="salary-info">Salary: $30,000 - $55,000</span>
+                </div>
+            </div>
+            
+            <div class="company-block">
+                <div class="logo-circle">
+                    <svg viewBox="0 0 24 24" width="32" height="32">
+                        <path fill="#000000" d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                    </svg>
+                </div>
+                <div class="company-details">
+                    <div class="company-title">Apple</div>
+                    <div class="location-text">📍 Boston, USA</div>
+                </div>
+            </div>
+            
+            <div class="applicants-row">
+                <div class="avatars-group">
+                    <div class="user-avatar"><img src="./girltwo.png" alt="Applicant 4"></div>
+                    <div class="user-avatar"><img src="./boytwo.png" alt="Applicant 5"></div>
+                    <div class="user-avatar"><img src="./boythree.png" alt="Applicant 6"></div>
+                </div>
+                <span class="count-text">9+ applicants</span>
+            </div>
+            
+            <div class="action-buttons">
+                <button class="button outline-btn">View details</button>
+                <button class="button primary-btn">Apply now</button>
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-header">
+                <h3 class="job-title">Marketing Officer</h3>
+                <div class="job-meta">
+                    <span class="job-type green-badge">PART-TIME</span>
+                    <span class="salary-info">Salary: 15,000 INR - 35,000 INR</span>
+                </div>
+            </div>
+            
+            <div class="company-block">
+                <div class="logo-circle">
+                    <svg viewBox="0 0 24 24" width="32" height="32">
+                        <circle cx="12" cy="12" r="10" fill="#0071c5"/>
+                        <text x="12" y="16" text-anchor="middle" fill="white" font-family="Arial" font-size="10" font-weight="bold">intel</text>
+                    </svg>
+                </div>
+                <div class="company-details">
+                    <div class="company-title">Intel Corp</div>
+                    <div class="location-text">📍 Bangalore, India</div>
+                </div>
+            </div>
+            
+            <div class="applicants-row">
+                <div class="avatars-group">
+                    <div class="user-avatar"><img src="./girltwo.png" alt="Applicant 7"></div>
+                    <div class="user-avatar"><img src="./boytwo.png" alt="Applicant 8"></div>
+                    <div class="user-avatar"><img src="./boythree.png" alt="Applicant 9"></div>
+                </div>
+                <span class="count-text">30+ applicants</span>
+            </div>
+            
+            <div class="action-buttons">
+                <button class="button outline-btn">View details</button>
+                <button class="button primary-btn">Apply now</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="section5">
+        <h1><a href="">View all</a></h1>
+    </section>
+
+   <section class="section6">
+    <aside id="cont1">
+        <h1><span>Hello Freelancers!</span></h1>
+        <h1>Create A Better</h1>
+        <h1>Future For Yourself</h1>
+        <p>At eu Lobortis pretium tincidunt amet lacus ut aenean aliquet.</p>
+        <p>Blandit a massa elementum id scelerisque rhoncus...</p>
+        <button>Apply now</button>
+    </aside>
+    <aside id="cont2">
+        <img src="./fivepplimg.png" alt="">
+    </aside>
+   </section>
+    
+   <section class="section7">
+    <h1>Meet Our Freelance <span>Community</span></h1>
+   </section>
+
+   <section class="section8">
+    <aside class="samecard">
+          <div class="card">
+        <div class="play-button">
+            <div class="play-icon"></div>
+        </div>
+        <div class="text">
+            Good Life Begins With A<br>Good Company
+        </div>
+    </div>
+    </aside>
+    <aside  class="samecard">
+          <div class="card">
+        <div class="play-button">
+            <div class="play-icon"></div>
+        </div>
+        <div class="text">
+            Good Life Begins With A<br>Good Company
+        </div>
+    </div>
+    </aside>
+    <aside id="middle" class="samecard"></aside>
+    <aside  class="samecard">
+          <div class="card">
+        <div class="play-button">
+            <div class="play-icon"></div>
+        </div>
+        <div class="text">
+            Good Life Begins With A<br>Good Company
+        </div>
+    </div>
+    </aside>
+    <aside  class="samecard">  <div class="card">
+        <div class="play-button">
+            <div class="play-icon"></div>
+        </div>
+        <div class="text">
+            Good Life Begins With A<br>Good Company
+        </div>
+    </div></aside>
+   </section>
+   
+
+       <div class="section9">
+        <div class="hiring-title-wrapper">
+            <h2>Top companies <span class="highlight-text">hiring now</span></h2>
+        </div>
+
+        <div class="companies-carousel">
+            <!-- First Row - Scrolls Left -->
+            <div class="brand-row">
+                <div class="company-logo-box">
+                    <div class="google-brand">
+                        <span class="letter-g">G</span><span class="letter-o1">o</span><span class="letter-o2">o</span><span class="letter-g2">g</span><span class="letter-l">l</span><span class="letter-e">e</span>
+                    </div>
+                </div>
+                <div class="company-logo-box">
+                    <div class="microsoft-brand">
+                        <div class="ms-icon-grid">
+                            <div class="ms-box-red"></div>
+                            <div class="ms-box-green"></div>
+                            <div class="ms-box-blue"></div>
+                            <div class="ms-box-yellow"></div>
+                        </div>
+                        <span class="ms-brand-name">Microsoft</span>
+                    </div>
+                </div>
+                <div class="company-logo-box">
+                    <div class="flipkart-brand">
+                        <span class="flipkart-name">Flipkart</span>
+                        <div class="flipkart-bag-icon"></div>
+                    </div>
+                </div>
+                <div class="company-logo-box">
+                    <div class="youtube-brand">
+                        <div class="yt-play-button"></div>
+                        <span class="yt-brand-name">YouTube</span>
+                    </div>
+                </div>
+                <div class="company-logo-box">
+                    <div class="ibm-brand">IBM</div>
+                </div>
+                <div class="company-logo-box">
+                    <div class="youtube-brand">
+                        <div class="yt-play-button"></div>
+                        <span class="yt-brand-name">YouTube</span>
+                    </div>
+                </div>
+                <!-- Duplicate for seamless loop -->
+                <div class="company-logo-box">
+                    <div class="google-brand">
+                        <span class="letter-g">G</span><span class="letter-o1">o</span><span class="letter-o2">o</span><span class="letter-g2">g</span><span class="letter-l">l</span><span class="letter-e">e</span>
+                    </div>
+                </div>
+                <div class="company-logo-box">
+                    <div class="microsoft-brand">
+                        <div class="ms-icon-grid">
+                            <div class="ms-box-red"></div>
+                            <div class="ms-box-green"></div>
+                            <div class="ms-box-blue"></div>
+                            <div class="ms-box-yellow"></div>
+                        </div>
+                        <span class="ms-brand-name">Microsoft</span>
+                    </div>
+                </div>
+                <div class="company-logo-box">
+                    <div class="flipkart-brand">
+                        <span class="flipkart-name">Flipkart</span>
+                        <div class="flipkart-bag-icon"></div>
+                    </div>
+                </div>
+                <div class="company-logo-box">
+                    <div class="youtube-brand">
+                        <div class="yt-play-button"></div>
+                        <span class="yt-brand-name">YouTube</span>
+                    </div>
+                </div>
+                <div class="company-logo-box">
+                    <div class="ibm-brand">IBM</div>
+                </div>
+                <div class="company-logo-box">
+                    <div class="youtube-brand">
+                        <div class="yt-play-button"></div>
+                        <span class="yt-brand-name">YouTube</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Row - Scrolls Right -->
+            <div class="brand-row">
+                <div class="company-logo-box">
+                    <div class="flipkart-brand">
+                        <span class="flipkart-name">Flipkart</span>
+                        <div class="flipkart-bag-icon"></div>
+                    </div>
+                </div>
+                <div class="company-logo-box">
+                    <div class="google-brand">
+                        <span class="letter-g">G</span><span class="letter-o1">o</span><span class="letter-o2">o</span><span class="letter-g2">g</span><span class="letter-l">l</span><span class="letter-e">e</span>
+                    </div>
+                </div>
+                <div class="company-logo-box">
+                    <div class="microsoft-brand">
+                        <div class="ms-icon-grid">
+                            <div class="ms-box-red"></div>
+                            <div class="ms-box-green"></div>
+                            <div class="ms-box-blue"></div>
+                            <div class="ms-box-yellow"></div>
+                        </div>
+                        <span class="ms-brand-name">Microsoft</span>
+                    </div>
+                </div>
+                <div class="company-logo-box">
+                    <div class="flipkart-brand">
+                        <span class="flipkart-name">Flipkart</span>
+                        <div class="flipkart-bag-icon"></div>
+                    </div>
+                </div>
+                <div class="company-logo-box">
+                    <div class="youtube-brand">
+                        <div class="yt-play-button"></div>
+                        <span class="yt-brand-name">YouTube</span>
+                    </div>
+                </div>
+                <div class="company-logo-box">
+                    <div class="ibm-brand">IBM</div>
+                </div>
+                <!-- Duplicate for seamless loop -->
+                <div class="company-logo-box">
+                    <div class="flipkart-brand">
+                        <span class="flipkart-name">Flipkart</span>
+                        <div class="flipkart-bag-icon"></div>
+                    </div>
+                </div>
+                <div class="company-logo-box">
+                    <div class="google-brand">
+                        <span class="letter-g">G</span><span class="letter-o1">o</span><span class="letter-o2">o</span><span class="letter-g2">g</span><span class="letter-l">l</span><span class="letter-e">e</span>
+                    </div>
+                </div>
+                <div class="company-logo-box">
+                    <div class="microsoft-brand">
+                        <div class="ms-icon-grid">
+                            <div class="ms-box-red"></div>
+                            <div class="ms-box-green"></div>
+                            <div class="ms-box-blue"></div>
+                            <div class="ms-box-yellow"></div>
+                        </div>
+                        <span class="ms-brand-name">Microsoft</span>
+                    </div>
+                </div>
+                <div class="company-logo-box">
+                    <div class="flipkart-brand">
+                        <span class="flipkart-name">Flipkart</span>
+                        <div class="flipkart-bag-icon"></div>
+                    </div>
+                </div>
+                <div class="company-logo-box">
+                    <div class="youtube-brand">
+                        <div class="yt-play-button"></div>
+                        <span class="yt-brand-name">YouTube</span>
+                    </div>
+                </div>
+                <div class="company-logo-box">
+                    <div class="ibm-brand">IBM</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- last part -->
+
+          <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section logo-section">
+                <div class="logo">
+                    <div class="logo-icon">S</div>
+                    <span class="logo-text">SHOP</span>
+                </div>
+                <div class="contact-info">
+                    <div class="phone">Call now: +91 9591776078</div>
+                    <div class="address">
+                        456 Chandni Chowk Street, Near<br>
+                        Red Fort, Old Delhi, New Delhi,<br>
+                        Delhi 110006, India
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Link</h3>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#admin">Admin</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Candidate</h3>
+                <ul>
+                    <li><a href="#browse-jobs">Browse Jobs</a></li>
+                    <li><a href="#browse-employers">Browse Employers</a></li>
+                    <li><a href="#candidate-dashboard">Candidate Dashboard</a></li>
+                    <li><a href="#saved-jobs">Saved Jobs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Employers</h3>
+                <ul>
+                    <li><a href="#post-job">Post a Job</a></li>
+                    <li><a href="#browse-candidates">Browse Candidates</a></li>
+                    <li><a href="#employers-dashboard">Employers Dashboard</a></li>
+                    <li><a href="#applications">Applications</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                @ 2022 AlwaysApply - Job Portal. All rights Reserved
+            </div>
+            <div class="social-links">
+                <a href="#facebook" aria-label="Facebook">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                </a>
+                <a href="#youtube" aria-label="YouTube">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                </a>
+                <a href="#instagram" aria-label="Instagram">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+                    </svg>
+                </a>
+                <a href="#twitter" aria-label="Twitter">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
